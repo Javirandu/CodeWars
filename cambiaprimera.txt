@@ -1,0 +1,12 @@
+#coge la primera letra y cambia todas las que sean iguales después por $
+#ejemplo: casco  -> cas$o , alhambra --> alh$ambr$
+#la parte del for no es necesaria, está comentada
+
+def cambiaprimera(cadena):
+    letra = cadena[0]
+    cadena_copia = cadena
+    """for i in range(len(cadena_copia)):
+        if cadena_copia[i] == letra:
+            cadena_copia.replace(letra, '$')
+    print(cadena_copia)"""
+    return (letra+cadena_copia[1:None].replace(letra,'$'))

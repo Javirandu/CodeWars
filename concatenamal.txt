@@ -1,0 +1,13 @@
+"""
+Escribe una función concatenamal que, 
+dadas dos cadenas nos devuelva 
+una sola cadena combinando ambas unidas por un espacio, 
+pero cambiando las dos primeras letras de cada palabra
+"""
+def concatenamal(cadena1,cadena2):
+    letra1= cadena2[0:2]
+    letra2 = cadena1[0:2]
+    cadena1_modificada = cadena1[0:2].replace(letra2,letra1)+cadena1[2:None]
+    cadena2_modificada = cadena2[0:2].replace(letra1,letra2)+cadena2[2:None]
+    cadenaFinal = cadena1_modificada + " " + cadena2_modificada
+    return cadenaFinal

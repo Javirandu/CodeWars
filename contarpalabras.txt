@@ -1,0 +1,7 @@
+manejador=open('prueba.txt') 
+data=manejador.readlines() 
+cuenta=0 
+for linea in data:
+  for palabra in linea.split(' '): 
+      cuenta=cuenta+1 
+print(cuenta)

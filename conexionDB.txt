@@ -1,0 +1,16 @@
+#Connection
+connection = sqlite3.connect("course.db")
+cursor = conection.cursor()
+
+#Insert a learner record into the table
+
+insert_statement = "INSERT INTO data_learner (first_name, last_name, dob, occupation)
+VALUES ("John", "Doe", "1992-01-01","Developer");"
+
+cursor.execute(insert_statement)
+
+#Execute SELECT statement via cursor
+cursor.execute("SELECT*FROM data_learner")
+
+#Get first row in table course
+learner = cursor.fetchone()

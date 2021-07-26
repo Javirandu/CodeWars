@@ -1,0 +1,15 @@
+def numero(n):
+    divisores = [] #numerosprimos
+    
+    for i in range (2, n+1):
+        while n%i == 0:
+	    divisores.append(i)
+	    n = n/i
+    return divisores
+print (numero (n))
+
+n = input("Introduce el número que quieres descomponer: ")
+
+print (" Este es el resultado: ")
+
+numero()

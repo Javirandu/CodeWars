@@ -1,0 +1,11 @@
+def cuentapalabras(texto,palabra):
+    i=0
+    cuenta = texto.count(palabra)
+    if cuenta>0:
+        return cuenta
+    else:
+        return 0
+        
+
+----------
+cuentapalabras('dos manzanas tres peras dos naranjas', 'dos') #da 2
